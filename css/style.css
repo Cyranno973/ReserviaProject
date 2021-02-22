@@ -9,13 +9,20 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Raleway";
+  text-decoration: none;
 }
 
 .containerAll {
   margin: 0 15px 0 15px;
 }
 
-.containerAll header .container-menu-logo {
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container-menu-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,32 +35,25 @@
           justify-content: space-between;
 }
 
-.containerAll header .container-menu-logo #logo {
+header .container-menu-logo #logo {
   margin: 25px 0;
 }
 
-.containerAll header .container-menu-logo nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.containerAll header .container-menu-logo nav ul li {
+header .container-menu-logo nav li {
   list-style-type: none;
   padding: 0px 24px;
 }
 
-.containerAll header .container-menu-logo nav ul li a {
-  text-decoration: none;
-  color: #0065FC;
+header .container-menu-logo nav li a {
+  color: #0065fc;
   padding-top: 20px;
   display: block;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.containerAll header .container-menu-logo nav ul li:before {
-  content: '';
+header .container-menu-logo nav li:before {
+  content: "";
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
   display: block;
@@ -61,23 +61,115 @@
   width: 100%;
 }
 
-.containerAll header .container-menu-logo nav ul li:first-child::before {
-  content: '';
+header .container-menu-logo nav li:first-child::before {
+  content: "";
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #0065FC;
+  background-color: #0065fc;
 }
 
-.containerAll header .container-menu-logo nav ul li:hover:before {
-  content: '';
+header .container-menu-logo nav li:hover:before {
+  content: "";
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #0065FC;
+  background-color: #0065fc;
 }
 
-.containerAll header section h1 {
+header section h1 {
   font-family: "Raleway-ExtraBold";
+}
+
+header section .container-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+header section .container-search i {
+  background-color: #f2f2f2;
+  display: block;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+header section .container-search input {
+  font-family: "Raleway-ExtraBold";
+  font-weight: bold;
+  background-color: #FFF;
+  border: 1px solid #f2f2f2;
+  border-left: none;
+  border-right: none;
+}
+
+header section .container-search p {
+  text-align: center;
+  color: #fff;
+  background-color: #0065fc;
+  border-radius: 0 15px 15px 0;
+  padding: 10px;
+}
+
+header section .container-filtre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+header section .container-filtre p {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+header section .container-filtre li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px 10px 10px 10px;
+  margin: 0 10px;
+}
+
+header section .container-filtre li a {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+header section .container-filtre li i {
+  background-color: #deebff;
+  padding: 10px;
+  color: #0065fc;
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

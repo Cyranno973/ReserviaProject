@@ -1,82 +1,151 @@
 // charte du site
-$sky: #DEEBFF; 
-$dark: #0065FC;
-$bg: #F2F2F2;   
+$sky: #deebff;
+$dark: #0065fc;
+$bg: #f2f2f2;
 
 //importation de la police
 @font-face {
-    font-family: "Raleway";
-    src: url("/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("woff"),
-           url("/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("woff2");
-   }
-
-// reset de la page 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Raleway";
-
+  font-family: "Raleway";
+  src: url("/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("woff"),
+    url("/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("woff2");
 }
 
-.containerAll{
-    margin: 0 15px 0 15px;
-    header{
-        .container-menu-logo{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-    
-            #logo{
-                margin: 25px 0;
-            }
-    
-            nav{
-                ul{
-                    display: flex;
-                    li{
-                        list-style-type: none;
-                        padding: 0px 24px;
-    
-                        a{
-                            text-decoration: none;
-                            color: $dark;
-                            padding-top: 20px;
-                            display: block;
-                            transition: all 0.5s;
-                        }
-                        &:before{ // mise en de la transistion
-                            content: '';
-                            transition: all 0.7s;
-                            display: block;
-                            height: 2px;
-                            width: 100%;
-                        }
-                        &:first-child::before{ // le premier element aura cette propriete (hébergement)
-                            content: '';
-                            display: block;
-                            height: 2px;
-                            width: 100%;
-                            background-color: $dark;
-                        }
-                        &:hover:before{
-                            content: '';
-                            display: block;
-                            height: 2px;
-                            width: 100%;
-                            background-color: $dark;
-                        }
-                        
-                    }
-                    
-                }
-            }
-        }
-        section{
-            h1{
-                font-family: "Raleway-ExtraBold";
-            }
+// reset de la page
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  text-decoration: none;
+}
+
+.containerAll {
+  margin: 0 15px 0 15px;
+}
+header {
+    ul {
+        display: flex;
+    }
+  .container-menu-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    #logo {
+      margin: 25px 0;
+    }
+
+    nav {
+      
+        li {
+          list-style-type: none;
+          padding: 0px 24px;
+
+          a {
+            color: $dark;
+            padding-top: 20px;
+            display: block;
+            transition: all 0.5s;
+          }
+          &:before {
+            // mise en de la transistion
+            content: "";
+            transition: all 0.7s;
+            display: block;
+            height: 2px;
+            width: 100%;
+          }
+          &:first-child::before {
+            // le premier element aura cette propriete (hébergement)
+            content: "";
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $dark;
+          }
+          &:hover:before {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $dark;
+          }
         }
     }
+  }
+  section {
+    h1 {
+      font-family: "Raleway-ExtraBold";
+    }
+    .container-search{
+        display: flex;
+        margin-top: 30px;
+        i{
+            background-color: $bg;
+            display: block;
+            padding: 10px;
+            border-radius: 5px 0 0 5px  ;
+        }
+
+        input{
+            font-family: "Raleway-ExtraBold";
+            font-weight: bold;
+            background-color: #FFF;
+            border: 1px solid $bg;
+            border-left: none;
+            border-right: none;
+        }
+        p{
+            text-align: center;
+            color: #fff;
+            background-color: $dark;
+            border-radius: 0 15px 15px 0;
+            padding: 10px;
+        }
+    }
+
+    .container-filtre{
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        p{
+            font-weight: bold;
+            padding-right: 20px;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            list-style-type: none;
+            border: 1px solid $bg;
+            border-radius: 10px 10px 10px 10px  ;
+            margin: 0 10px;
+            a{
+                text-transform: capitalize;
+                font-weight: bold;
+                text-decoration: none;
+                color: #000;
+
+            }
+            i{
+                background-color: $sky;
+                padding: 10px;
+                color: $dark;
+                margin-right: 10px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+
+            }
+        }
+        
+    }
     
+  }
 }
