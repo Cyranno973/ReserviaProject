@@ -84,7 +84,7 @@ header {
             background-color: $bg;
             display: block;
             padding: 10px;
-            border-radius: 5px 0 0 5px  ;
+            border-radius: 15px 0 0 15px  ;
         }
 
         input{
@@ -119,8 +119,9 @@ header {
             flex-direction: row;
             list-style-type: none;
             border: 1px solid $bg;
-            border-radius: 10px 10px 10px 10px  ;
+            border-radius: 25px;
             margin: 0 10px;
+            padding-right: 15px;
             a{
                 text-transform: capitalize;
                 font-weight: bold;
@@ -133,18 +134,31 @@ header {
                 padding: 10px;
                 color: $dark;
                 margin-right: 10px;
-                height: 50px;
-                width: 50px;
+                height: 44px;
+                width: 42px;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
-
-
             }
         }
         
+    }
+    .info{
+        display: flex;
+        padding-top: 20px;
+        align-items: center;
+        i{
+            margin-right: 20px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: $bg;
+            text-align: center;
+            align-items: center;
+            padding: 5px;
+            color: $dark;
+        }
     }
     
   }
