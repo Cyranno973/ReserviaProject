@@ -15,7 +15,7 @@
   margin: 0 15px 0 15px;
 }
 
-.containerAll .container-menu-logo {
+.containerAll header .container-menu-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,32 +28,56 @@
           justify-content: space-between;
 }
 
-.containerAll .container-menu-logo #logo {
-  margin-top: 10px;
+.containerAll header .container-menu-logo #logo {
+  margin: 25px 0;
 }
 
-.containerAll .container-menu-logo nav ul {
+.containerAll header .container-menu-logo nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.containerAll .container-menu-logo nav ul li {
+.containerAll header .container-menu-logo nav ul li {
   list-style-type: none;
-  padding: 5px 24px;
-  border-top: 10px #0065FC;
+  padding: 0px 24px;
 }
 
-.containerAll .container-menu-logo nav ul li a {
+.containerAll header .container-menu-logo nav ul li a {
   text-decoration: none;
   color: #0065FC;
+  padding-top: 20px;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.containerAll .container-menu-logo nav ul li::before {
+.containerAll header .container-menu-logo nav ul li:before {
+  content: '';
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+
+.containerAll header .container-menu-logo nav ul li:first-child::before {
   content: '';
   display: block;
   height: 2px;
   width: 100%;
-  background-color: red;
+  background-color: #0065FC;
+}
+
+.containerAll header .container-menu-logo nav ul li:hover:before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #0065FC;
+}
+
+.containerAll header section h1 {
+  font-family: "Raleway-ExtraBold";
 }
 /*# sourceMappingURL=style.css.map */

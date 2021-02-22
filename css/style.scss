@@ -1,13 +1,16 @@
-$sky: #DEEBFF;
+// charte du site
+$sky: #DEEBFF; 
 $dark: #0065FC;
-$bg: #F2F2F2;
+$bg: #F2F2F2;   
 
+//importation de la police
 @font-face {
     font-family: "Raleway";
     src: url("/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("woff"),
            url("/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("woff2");
    }
 
+// reset de la page 
 *{
     margin: 0;
     padding: 0;
@@ -15,41 +18,65 @@ $bg: #F2F2F2;
     font-family: "Raleway";
 
 }
+
 .containerAll{
     margin: 0 15px 0 15px;
-
-    .container-menu-logo{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        #logo{
-            margin-top: 10px;
-        }
-
-        nav{
-            ul{
-                display: flex;
-                li{
-                    list-style-type: none;
-                    padding: 5px 24px;
-                    border-top: 10px $dark;
-
-                    a{
-                        text-decoration: none;
-                        color: $dark;
-                    }
-                    &::before{
-                        content: '';
-                        display: block;
-                        height: 2px;
-                        width: 100%;
-                        background-color: red;
+    header{
+        .container-menu-logo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            #logo{
+                margin: 25px 0;
+            }
+    
+            nav{
+                ul{
+                    display: flex;
+                    li{
+                        list-style-type: none;
+                        padding: 0px 24px;
+    
+                        a{
+                            text-decoration: none;
+                            color: $dark;
+                            padding-top: 20px;
+                            display: block;
+                            transition: all 0.5s;
+                        }
+                        &:before{ // mise en de la transistion
+                            content: '';
+                            transition: all 0.7s;
+                            display: block;
+                            height: 2px;
+                            width: 100%;
+                        }
+                        &:first-child::before{ // le premier element aura cette propriete (hébergement)
+                            content: '';
+                            display: block;
+                            height: 2px;
+                            width: 100%;
+                            background-color: $dark;
+                        }
+                        &:hover:before{
+                            content: '';
+                            display: block;
+                            height: 2px;
+                            width: 100%;
+                            background-color: $dark;
+                        }
+                        
                     }
                     
                 }
-                
+            }
+        }
+        section{
+            h1{
+                font-family: "Raleway-ExtraBold";
             }
         }
     }
+    
 }
