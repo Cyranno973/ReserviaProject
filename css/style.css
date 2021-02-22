@@ -77,25 +77,29 @@ header .container-menu-logo nav li:hover:before {
   background-color: #0065fc;
 }
 
-header section h1 {
+header .header {
+  margin-bottom: 5rem;
+}
+
+header .header h1 {
   font-family: "Raleway-ExtraBold";
 }
 
-header section .container-search {
+header .header .container-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
 }
 
-header section .container-search i {
+header .header .container-search i {
   background-color: #f2f2f2;
   display: block;
   padding: 10px;
   border-radius: 15px 0 0 15px;
 }
 
-header section .container-search input {
+header .header .container-search input {
   font-family: "Raleway-ExtraBold";
   font-weight: bold;
   background-color: #FFF;
@@ -104,7 +108,7 @@ header section .container-search input {
   border-right: none;
 }
 
-header section .container-search p {
+header .header .container-search p {
   text-align: center;
   color: #fff;
   background-color: #0065fc;
@@ -112,7 +116,7 @@ header section .container-search p {
   padding: 10px;
 }
 
-header section .container-filtre {
+header .header .container-filtre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,12 +126,12 @@ header section .container-filtre {
   margin-top: 40px;
 }
 
-header section .container-filtre p {
+header .header .container-filtre p {
   font-weight: bold;
   padding-right: 20px;
 }
 
-header section .container-filtre li {
+header .header .container-filtre li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,14 +152,14 @@ header section .container-filtre li {
   padding-right: 15px;
 }
 
-header section .container-filtre li a {
+header .header .container-filtre li a {
   text-transform: capitalize;
   font-weight: bold;
   text-decoration: none;
   color: #000;
 }
 
-header section .container-filtre li i {
+header .header .container-filtre li i {
   background-color: #deebff;
   padding: 10px;
   color: #0065fc;
@@ -174,7 +178,7 @@ header section .container-filtre li i {
           justify-content: center;
 }
 
-header section .info {
+header .header .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +188,7 @@ header section .info {
           align-items: center;
 }
 
-header section .info i {
+header .header .info i {
   margin-right: 20px;
   height: 30px;
   width: 30px;
@@ -196,5 +200,93 @@ header section .info i {
           align-items: center;
   padding: 5px;
   color: #0065fc;
+}
+
+.s1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.s1 .inner-s1 {
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 70%;
+}
+
+.s1 .inner-s2 {
+  width: 30%;
+}
+
+.s1 .hebergement-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.s1 .hebergement-1 .taille1 {
+  width: 50%;
+}
+
+.s1 .hebergement-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.s1 h2 {
+  font-family: "Raleway-ExtraBold";
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+
+footer .foot1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 20px;
+}
+
+footer .foot1 h3, footer .foot1 p {
+  margin: 15px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.container-stars {
+  color: #0065fc;
+}
+
+.container-stars .starE {
+  color: #f2f2f2;
+}
+
+.container-img1 {
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
