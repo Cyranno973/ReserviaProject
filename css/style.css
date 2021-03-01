@@ -13,7 +13,7 @@
 }
 
 .containerAll {
-  margin: 0 15px 0 15px;
+  margin: 0 4rem 0 4rem;
 }
 
 header ul {
@@ -231,10 +231,6 @@ header .header .info i {
   display: flex;
 }
 
-.s1 .hebergement-1 .taille1 {
-  width: 50%;
-}
-
 .s1 .hebergement-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,6 +248,7 @@ header .header .info i {
 
 img {
   width: 100%;
+  border-radius: 15px;
 }
 
 footer {
@@ -288,5 +285,8 @@ footer .foot1 h3, footer .foot1 p {
 
 .container-img1 {
   background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
